@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS APIcatalog;
-CREATE DATABASE APIcatalog;
+Use js3crvnpt3d1fv8h;
 
 CREATE TABLE APIList
 (
