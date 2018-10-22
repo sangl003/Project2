@@ -1,0 +1,53 @@
+ID ,Name ,Category ,Website URL ,Short description ,Authentication,updatedAt,createdAt
+1,Cat Facts,Animals,https://alexwohlbruck.github.io/cat-facts/,Daily cat facts,NO,10/21/18 9:25 PM,10/21/18 9:25 PM
+2,Dogs,Animals,https://dog.ceo/dog-api/,Based on the Stanford Dogs Dataset,NO,10/22/18 9:25 PM,10/22/18 9:25 PM
+3,HTTP Cats,Animals,https://http.cat/,Cat for every HTTP Status,NO,10/23/18 9:25 PM,10/23/18 9:25 PM
+4,AniList,Anime,https://github.com/AniList/ApiV2-GraphQL-Docs,Anime discovery and tracking,OAuth,10/24/18 9:25 PM,10/24/18 9:25 PM
+5,Dribbble,Art & Design,http://developer.dribbble.com/v1/,Tools and apps to help users publish their design work,OAuth,10/25/18 9:25 PM,10/25/18 9:25 PM
+6,Google Analytics,Business,https://developers.google.com/analytics/,"Collect, configure and analyze your data to reach the right audience",OAuth,10/26/18 9:25 PM,10/26/18 9:25 PM
+7,Google Books,,,,,10/27/18 9:25 PM,10/27/18 9:25 PM
+8,Marker API,Business,https://www.markerapi.com/,Trademark Search,No,10/28/18 9:25 PM,10/28/18 9:25 PM
+9,Trello,Business,https://developers.trello.com/,"Boards, lists and cards to help you organize and prioritize your projects",OAuth,10/29/18 9:25 PM,10/29/18 9:25 PM
+10,Gmail,Business,https://developers.google.com/gmail/api/,"Flexible, RESTful access to the user's inbox",OAuth,10/30/18 9:25 PM,10/30/18 9:25 PM
+11,Clearbit Logo,Business,https://clearbit.com/docs#logo-api,Search for company logos and embed them in your projects,apiKey,10/31/18 9:25 PM,10/31/18 9:25 PM
+12,Dropbox,Cloud Storage & Data Sharing,https://www.dropbox.com/developers,File Storage and Sharing,OAuth,11/1/18 9:25 PM,11/1/18 9:25 PM
+13,Cloudmersive Validate,Data Validation,https://cloudmersive.com/validate-api,"Validate email addresses, phone numbers, VAT numbers and domain names",apiKey,11/2/18 9:25 PM,11/2/18 9:25 PM
+14,Chuck Norris ,Fun,https://api.chucknorris.io/,Chuck Norris Facts,,11/3/18 9:25 PM,11/3/18 9:25 PM
+15,Goodreads,Books,https://www.goodreads.com/api,Book ratings and descriptions,apiKey,11/4/18 9:25 PM,11/4/18 9:25 PM
+16,Travis CI,Continuous Integration,https://docs.travis-ci.com/api/,Sync your GitHub projects with Travis CI to test your code in minutes,apiKey,11/5/18 9:25 PM,11/5/18 9:25 PM
+17,Codeship,Continuous Integration,https://apidocs.codeship.com/v2/introduction/basic-vs-pro,Continuous Integration Platform in the Cloud,apiKey,11/6/18 9:25 PM,11/6/18 9:25 PM
+18,National Weather Service,Weather,https://www.weather.gov/documentation/services-web-api#,Forcast data,apiKey,11/7/18 9:25 PM,11/7/18 9:25 PM
+19,Storm Glass,Weather,https://stormglass.io/,Global marine weather forcast data,apiKey,11/8/18 9:25 PM,11/8/18 9:25 PM
+20,OpenUV,Weather,https://www.openuv.io/,Realtime UV index forcast,apiKey,11/9/18 9:25 PM,11/9/18 9:25 PM
+21,YouTube,Video,https://developers.google.com/youtube/,Add YouTube functionality to apps/websites,OAuth,11/10/18 9:25 PM,11/10/18 9:25 PM
+22,Vimeo,Video,https://developer.vimeo.com/,Vimeo for developers,OAuth,11/11/18 9:25 PM,11/11/18 9:25 PM
+23,TVMaze,Video,http://www.tvmaze.com/api,TV show data,No,11/12/18 9:25 PM,11/12/18 9:25 PM
+24,TMDb,Video,https://www.themoviedb.org/documentation/api,Community based movie data,apiKey,11/13/18 9:25 PM,11/13/18 9:25 PM
+25,Kelley Blue Book,Vehicle,http://developer.kbb.com/#!/data/1-Default,"Vehicle info, pricing, configuration, plus much more",apiKey,11/14/18 9:25 PM,11/14/18 9:25 PM
+26,Uber,Transportation,https://developer.uber.com/products,Uber ride requests and price estimation,OAuth,11/15/18 9:25 PM,11/15/18 9:25 PM
+27,UPS,Tracking,https://www.ups.com/upsdeveloperkit,Shipment and address information,apiKey,11/16/18 9:25 PM,11/16/18 9:25 PM
+28,Fitbit,Sports,https://dev.fitbit.com/,Fitbit information,OAuth,11/17/18 9:25 PM,11/17/18 9:25 PM
+29,Twitter,Social Media,https://developer.twitter.com/en/docs,Read and write Twitter data,OAuth,11/18/18 9:25 PM,11/18/18 9:25 PM
+30,Tumblr,Social Media,https://www.tumblr.com/docs/en/api/v2,Read and write Tumblr data,OAuth,11/19/18 9:25 PM,11/19/18 9:25 PM
+31,Twitch,Social Media,https://dev.twitch.tv/docs,Game streaming,OAuth,11/20/18 9:25 PM,11/20/18 9:25 PM
+32,Slack,Social Media,https://api.slack.com/,Team instant messaging,OAuth,11/21/18 9:25 PM,11/21/18 9:25 PM
+33,Reddit,Social Media,https://www.reddit.com/dev/api,Homepage of the internet,OAuth,11/22/18 9:25 PM,11/22/18 9:25 PM
+34,Pintrest,Social Media,https://developers.pinterest.com/,The world's catalog of ideas,OAuth,11/23/18 9:25 PM,11/23/18 9:25 PM
+35,Meetup.com,Social Media,https://www.meetup.com/meetup_api/,Data about Meetup from Meetup.com,apiKey,11/24/18 9:25 PM,11/24/18 9:25 PM
+36,LinkedIn,Social Media,https://developer.linkedin.com/docs/rest-api,Digital intregrations with LinkedIn,OAuth,11/25/18 9:25 PM,11/25/18 9:25 PM
+37,Instagram,Social Media,https://www.instagram.com/developer/,"Instagram Login, Share, Social Plugins, etc.",OAuth,11/26/18 9:25 PM,11/26/18 9:25 PM
+38,Foursquare,Social Media,https://developer.foursquare.com/,Interact with Foursquare users and places,OAuth,11/27/18 9:25 PM,11/27/18 9:25 PM
+39,Facebook,Social Media,https://developers.facebook.com/,"Facebook Login, Share, Social Plugins, etc.",OAuth,11/28/18 9:25 PM,11/28/18 9:25 PM
+40,Discord,Social Media,https://discordapp.com/developers/docs/intro,"Make bots, integrate onto external platforms",OAuth,11/29/18 9:25 PM,11/29/18 9:25 PM
+41,Wal-Mart,Shopping,https://developer.walmartlabs.com/docs,Item price and availability,apiKey,11/30/18 9:25 PM,11/30/18 9:25 PM
+42,eBay,Shopping,https://developer.ebay.com/,Buy and sell on eBay,OAuth,12/1/18 9:25 PM,12/1/18 9:25 PM
+43,Best Buy,Shopping,https://bestbuyapis.github.io/api-documentation/#overview,"Products, buying options, categories, recommendations, stores, and commerce",apiKey,12/2/18 9:25 PM,12/2/18 9:25 PM
+44,NASA ,Science & Math,https://api.nasa.gov/,"NASA data, including imagery",No,12/3/18 9:25 PM,12/3/18 9:25 PM
+45,CORE,Science & Math,https://core.ac.uk/services#api,Access the world's Open Access research papers,apiKey,12/4/18 9:25 PM,12/4/18 9:25 PM
+46,Imgur,Photography,https://apidocs.imgur.com/,Images,OAuth,12/5/18 9:25 PM,12/5/18 9:25 PM
+47,Giphy,Photography,https://developers.giphy.com/docs/,Get all your gifs,apiKey,12/6/18 9:25 PM,12/6/18 9:25 PM
+48,Getty Images,Photography,https://developers.gettyimages.com/en/,Build applications using the world's most powerful imagery,OAuth,12/7/18 9:25 PM,12/7/18 9:25 PM
+49,Flickr,Photography,https://www.flickr.com/services/api/,Flickr services,OAuth,12/8/18 9:25 PM,12/8/18 9:25 PM
+50,USPTO,Patents,https://www.uspto.gov/learning-and-resources/open-data-and-mobility,US patent api services,No,12/9/18 9:25 PM,12/9/18 9:25 PM
+51,Yelp,Open Data,https://www.yelp.com/developers/documentation/v3,Find local businesses,OAuth,12/10/18 9:25 PM,12/10/18 9:25 PM
+52,Wikipedia,Open Data,https://www.mediawiki.org/wiki/API:Main_page,Mediawiki encyclopedia,No,12/11/18 9:25 PM,12/11/18 9:25 PM
