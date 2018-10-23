@@ -1,8 +1,8 @@
 module.exports = (sequelize, DataTypes) => {
-  const Example = sequelize.define('Example', {
+  const API = sequelize.define('API', {
     text: DataTypes.STRING,
     description: DataTypes.TEXT,
     category: DataTypes.TEXT,
   });
-  return Example;
+  return API;
 };
