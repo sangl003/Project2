@@ -1,99 +1,103 @@
+/* global $ */
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
-var $exampleList = $("#example-list");
+const $apiText = $('#api-text');
+const $apiCategory = $('#api-category');
+const $apiDescription = $('#api-description');
+const $submitBtn = $('#submit');
+const $apiList = $('#api-list');
 
 // The API object contains methods for each kind of request we'll make
-var API = {
-  saveExample: function(example) {
+const API = {
+  saveapi(api) {
     return $.ajax({
       headers: {
-        "Content-Type": "application/json"
+        'Content-Type': 'application/json',
       },
-      type: "POST",
-      url: "api/examples",
-      data: JSON.stringify(example)
+      type: 'POST',
+      url: 'api/apis',
+      data: JSON.stringify(api),
     });
   },
-  getExamples: function() {
+  getapis() {
     return $.ajax({
-      url: "api/examples",
-      type: "GET"
+      url: 'api/apis',
+      type: 'GET',
     });
   },
-  deleteExample: function(id) {
-    return $.ajax({
-      url: "api/examples/" + id,
-      type: "DELETE"
-    });
-  }
+  // deleteapi: function(id) {
+  //   return $.ajax({
+  //     url: "api/apis/" + id,
+  //     type: "DELETE"
+  //   });
+  // }
 };
 
-// refreshExamples gets new examples from the db and repopulates the list
-var refreshExamples = function() {
-  API.getExamples().then(function(data) {
-    var $examples = data.map(function(example) {
-      var $a = $("<a>")
-        .text(example.text)
-        .attr("href", "/example/" + example.id);
+// refreshapis gets new apis from the db and repopulates the list
+const refreshapis = () => {
+  API.getapis().then((data) => {
+    const $apis = data.map((api) => {
+      const $a = $('<a>')
+        .text(api.text)
+        .attr('href', `/api/${api.id}`);
 
-      var $li = $("<li>")
+      const $li = $('<li>')
         .attr({
-          class: "list-group-item",
-          "data-id": example.id
+          class: 'list-group-item',
+          'data-id': api.id,
         })
         .append($a);
 
-      var $button = $("<button>")
-        .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
+      // const $button = $("<button>")
+      //   .addClass("btn btn-danger float-right delete")
+      //   .text("ｘ");
 
-      $li.append($button);
+      // $li.append($button);
 
       return $li;
     });
 
-    $exampleList.empty();
-    $exampleList.append($examples);
+    $apiList.empty();
+    $apiList.append($apis);
   });
 };
 
-// handleFormSubmit is called whenever we submit a new example
-// Save the new example to the db and refresh the list
-var handleFormSubmit = function(event) {
+// handleFormSubmit is called whenever we submit a new api
+// Save the new api to the db and refresh the list
+const handleFormSubmit = (event) => {
   event.preventDefault();
 
-  var example = {
-    text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
+  const api = {
+    text: $apiText.val().trim(),
+    category: $apiCategory.val().trim(),
+    description: $apiDescription.val().trim(),
   };
 
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
+  if (!(api.text && api.description)) {
+    alert('You must enter an api text and description!');
     return;
   }
 
-  API.saveExample(example).then(function() {
-    refreshExamples();
+  API.saveapi(api).then(() => {
+    refreshapis();
   });
 
-  $exampleText.val("");
-  $exampleDescription.val("");
+  $apiText.val('');
+  $apiCategory.val('');
+  $apiDescription.val('');
 };
 
-// handleDeleteBtnClick is called when an example's delete button is clicked
-// Remove the example from the db and refresh the list
-var handleDeleteBtnClick = function() {
-  var idToDelete = $(this)
-    .parent()
-    .attr("data-id");
+// handleDeleteBtnClick is called when an api's delete button is clicked
+// Remove the api from the db and refresh the list
+// const handleDeleteBtnClick = function() {
+//   const idToDelete = $(this)
+//     .parent()
+//     .attr("data-id");
 
-  API.deleteExample(idToDelete).then(function() {
-    refreshExamples();
-  });
-};
+//   API.deleteapi(idToDelete).then(function() {
+//     refreshapis();
+//   });
+// };
 
 // Add event listeners to the submit and delete buttons
-$submitBtn.on("click", handleFormSubmit);
-$exampleList.on("click", ".delete", handleDeleteBtnClick);
+$submitBtn.on('click', handleFormSubmit);
+// $apiList.on("click", ".delete", handleDeleteBtnClick);

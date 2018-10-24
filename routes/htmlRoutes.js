@@ -3,19 +3,19 @@ const db = require('../models');
 module.exports = (app) => {
   // Load index page
   app.get('/', (req, res) => {
-    db.Example.findAll({}).then((dbExamples) => {
+    db.API.findAll({}).then((dbAPIs) => {
       res.render('index', {
-        msg: 'Welcome!',
-        examples: dbExamples,
+        msg: 'IPA - API catalog!',
+        apis: dbAPIs,
       });
     });
   });
 
   // Load example page and pass in an example by id
-  app.get('/example/:id', (req, res) => {
-    db.Example.findOne({ where: { id: req.params.id } }).then((dbExample) => {
-      res.render('example', {
-        example: dbExample,
+  app.get('/apis/:id', (req, res) => {
+    db.API.findOne({ where: { id: req.params.id } }).then((dbAPI) => {
+      res.render('api', {
+        api: dbAPI,
       });
     });
   });
