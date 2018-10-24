@@ -3,6 +3,8 @@ module.exports = (sequelize, DataTypes) => {
     text: DataTypes.STRING,
     description: DataTypes.TEXT,
     category: DataTypes.TEXT,
+    WebsiteURL: DataTypes.TEXT,
+    Authentication: DataTypes.TEXT,
   });
   return API;
 };

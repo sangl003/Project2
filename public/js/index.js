@@ -3,6 +3,8 @@
 const $apiText = $('#api-text');
 const $apiCategory = $('#api-category');
 const $apiDescription = $('#api-description');
+const $apiURL = $('#api-URL');
+const $apiAuthentication = $('#api-Authentication');
 const $submitBtn = $('#submit');
 const $apiList = $('#api-list');
 
@@ -70,6 +72,8 @@ const handleFormSubmit = (event) => {
     text: $apiText.val().trim(),
     category: $apiCategory.val().trim(),
     description: $apiDescription.val().trim(),
+    WebsiteURL: $apiURL.val().trim(),
+    Authentication: $apiAuthentication.val().trim(),
   };
 
   if (!(api.text && api.description)) {
@@ -84,6 +88,8 @@ const handleFormSubmit = (event) => {
   $apiText.val('');
   $apiCategory.val('');
   $apiDescription.val('');
+  $apiAuthentication.val('');
+  $apiURL.val('');
 };
 
 // handleDeleteBtnClick is called when an api's delete button is clicked
