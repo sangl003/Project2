@@ -5,6 +5,9 @@ module.exports = (sequelize, DataTypes) => {
     category: DataTypes.TEXT,
     WebsiteURL: DataTypes.TEXT,
     Authentication: DataTypes.TEXT,
+  },
+  {
+    timestamps: false,
   });
   return API;
 };
