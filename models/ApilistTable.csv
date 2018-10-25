@@ -1,0 +1,53 @@
+ID ,Name ,Category ,Website URL ,Short description ,Authentication
+1,Cat Facts,Animals,https://alexwohlbruck.github.io/cat-facts/,Daily cat facts,NO
+2,Dogs,Animals,https://dog.ceo/dog-api/,Based on the Stanford Dogs Dataset,NO
+3,HTTP Cats,Animals,https://http.cat/,Cat for every HTTP Status,NO
+4,AniList,Anime,https://github.com/AniList/ApiV2-GraphQL-Docs,Anime discovery and tracking,OAuth
+5,Dribbble,Art & Design,http://developer.dribbble.com/v1/,Tools and apps to help users publish their design work,OAuth
+6,Google Analytics,Business,https://developers.google.com/analytics/,"Collect, configure and analyze your data to reach the right audience",OAuth
+7,Google Books,xxxx,xxx,xxx,
+8,Marker API,Business,https://www.markerapi.com/,Trademark Search,No
+9,Trello,Business,https://developers.trello.com/,"Boards, lists and cards to help you organize and prioritize your projects",OAuth
+10,Gmail,Business,https://developers.google.com/gmail/api/,"Flexible, RESTful access to the user's inbox",OAuth
+11,Clearbit Logo,Business,https://clearbit.com/docs#logo-api,Search for company logos and embed them in your projects,apiKey
+12,Dropbox,Cloud Storage & Data Sharing,https://www.dropbox.com/developers,File Storage and Sharing,OAuth
+13,Cloudmersive Validate,Data Validation,https://cloudmersive.com/validate-api,"Validate email addresses, phone numbers, VAT numbers and domain names",apiKey
+14,Chuck Norris ,Fun,https://api.chucknorris.io/,Chuck Norris Facts,
+15,Goodreads,Books,https://www.goodreads.com/api,Book ratings and descriptions,apiKey
+16,Travis CI,Continuous Integration,https://docs.travis-ci.com/api/,Sync your GitHub projects with Travis CI to test your code in minutes,apiKey
+17,Codeship,Continuous Integration,https://apidocs.codeship.com/v2/introduction/basic-vs-pro,Continuous Integration Platform in the Cloud,apiKey
+18,National Weather Service,Weather,https://www.weather.gov/documentation/services-web-api#,Forcast data,apiKey
+19,Storm Glass,Weather,https://stormglass.io/,Global marine weather forcast data,apiKey
+20,OpenUV,Weather,https://www.openuv.io/,Realtime UV index forcast,apiKey
+21,YouTube,Video,https://developers.google.com/youtube/,Add YouTube functionality to apps/websites,OAuth
+22,Vimeo,Video,https://developer.vimeo.com/,Vimeo for developers,OAuth
+23,TVMaze,Video,http://www.tvmaze.com/api,TV show data,No
+24,TMDb,Video,https://www.themoviedb.org/documentation/api,Community based movie data,apiKey
+25,Kelley Blue Book,Vehicle,http://developer.kbb.com/#!/data/1-Default,"Vehicle info, pricing, configuration, plus much more",apiKey
+26,Uber,Transportation,https://developer.uber.com/products,Uber ride requests and price estimation,OAuth
+27,UPS,Tracking,https://www.ups.com/upsdeveloperkit,Shipment and address information,apiKey
+28,Fitbit,Sports,https://dev.fitbit.com/,Fitbit information,OAuth
+29,Twitter,Social Media,https://developer.twitter.com/en/docs,Read and write Twitter data,OAuth
+30,Tumblr,Social Media,https://www.tumblr.com/docs/en/api/v2,Read and write Tumblr data,OAuth
+31,Twitch,Social Media,https://dev.twitch.tv/docs,Game streaming,OAuth
+32,Slack,Social Media,https://api.slack.com/,Team instant messaging,OAuth
+33,Reddit,Social Media,https://www.reddit.com/dev/api,Homepage of the internet,OAuth
+34,Pintrest,Social Media,https://developers.pinterest.com/,The world's catalog of ideas,OAuth
+35,Meetup.com,Social Media,https://www.meetup.com/meetup_api/,Data about Meetup from Meetup.com,apiKey
+36,LinkedIn,Social Media,https://developer.linkedin.com/docs/rest-api,Digital intregrations with LinkedIn,OAuth
+37,Instagram,Social Media,https://www.instagram.com/developer/,"Instagram Login, Share, Social Plugins, etc.",OAuth
+38,Foursquare,Social Media,https://developer.foursquare.com/,Interact with Foursquare users and places,OAuth
+39,Facebook,Social Media,https://developers.facebook.com/,"Facebook Login, Share, Social Plugins, etc.",OAuth
+40,Discord,Social Media,https://discordapp.com/developers/docs/intro,"Make bots, integrate onto external platforms",OAuth
+41,Wal-Mart,Shopping,https://developer.walmartlabs.com/docs,Item price and availability,apiKey
+42,eBay,Shopping,https://developer.ebay.com/,Buy and sell on eBay,OAuth
+43,Best Buy,Shopping,https://bestbuyapis.github.io/api-documentation/#overview,"Products, buying options, categories, recommendations, stores, and commerce",apiKey
+44,NASA ,Science & Math,https://api.nasa.gov/,"NASA data, including imagery",No
+45,CORE,Science & Math,https://core.ac.uk/services#api,Access the world's Open Access research papers,apiKey
+46,Imgur,Photography,https://apidocs.imgur.com/,Images,OAuth
+47,Giphy,Photography,https://developers.giphy.com/docs/,Get all your gifs,apiKey
+48,Getty Images,Photography,https://developers.gettyimages.com/en/,Build applications using the world's most powerful imagery,OAuth
+49,Flickr,Photography,https://www.flickr.com/services/api/,Flickr services,OAuth
+50,USPTO,Patents,https://www.uspto.gov/learning-and-resources/open-data-and-mobility,US patent api services,No
+51,Yelp,Open Data,https://www.yelp.com/developers/documentation/v3,Find local businesses,OAuth
+52,Wikipedia,Open Data,https://www.mediawiki.org/wiki/API:Main_page,Mediawiki encyclopedia,No

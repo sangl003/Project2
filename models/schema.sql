@@ -1,12 +1,13 @@
-Use js3crvnpt3d1fv8h;
+Use apicatalog;
 
-CREATE TABLE APIList
+CREATE TABLE apilists
 (
     id int PRIMARY key not null auto_increment,
-    apiname VARCHAR(255) not null,
+    text VARCHAR(255) not null,
     category VARCHAR(255) not null,
-    websiteURL VARCHAR(255) not null,
-    authentication VARCHAR(255) not null
+    WebsiteURL VARCHAR(255) not null,
+    description varchar(255) not null,
+    Authentication VARCHAR(255) not null
 );
 
 CREATE TABLE APIratings
