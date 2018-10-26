@@ -26,6 +26,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
+    "nodemon": "^1.18.5",
     "prettier": "^1.13.7"
   }
 }
