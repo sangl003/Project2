@@ -1,4 +1,4 @@
-<nav class="teal" role="navigation">
+ <nav class="teal" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">API Catalog</a>
       <ul class="right hide-on-med-and-down">
@@ -13,31 +13,50 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-<div class="container">
-  <div class="row">
-    <div class="col-8 offset-2">
-      <div class="card mt-4">
-        <div class="card-body">
-          <h5 class="card-title">Api</h5>
-          <p>
-            <strong>ID</strong>: {{api.id}}</p>
-          <p>
-          <p>
-            <strong>Text</strong>: {{api.text}}</p>
-          <p>
-            <strong>Description:</strong> {{api.description}}</p>
-          <p>
-            <strong>Website URL:</strong> {{api.WebsiteURL}}</p>
-          <p>
-            <strong>Authentication:</strong> {{api.Authentication}}</p>
-           
-           <a href="/">← Back To Home</a>
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h1><center>Add your favorite API</center></h1>
+        <hr>
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <label for="api-text">API NAME</label>
+            <textarea class="form-control" id="api-text" aria-describedby="api-text" placeholder="Enter API Name"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="api-description">API DESCRIPTION</label>
+            <textarea class="form-control" id="api-description" aria-describedby="api-description" placeholder="Enter API Description"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="api-category">API CATEGORY</label>
+            <textarea class="form-control" id="api-category" aria-describedby="api-category" placeholder="Enter API Category"></textarea>
+          </div>
+        <div class="form-group">
+            <label for="api-URL">API URL</label>
+            <textarea class="form-control" id="api-URL" aria-describedby="api-URL" placeholder="Enter API URL"></textarea>
         </div>
+        <div class="form-group">
+            <label for="api-Authentication">API AUTHENTICATION</label>
+            <textarea class="form-control" id="api-Authentication" aria-describedby="api-Authentication" placeholder="Enter API Authentication"></textarea>
+        </div>
+          <button id="submit" class="btn btn-primary float-right">Submit</button>
+        </form>
+        <h3><center>API List:</center></h3>
+        <hr>
+        <ul id="api-list" class="list-group">
+          {{#each apis}}
+          <li data-id="{{this.id}}" class="list-group-item">
+            <a href="apis/{{this.id}}">{{this.text}}</a>
+            {{!-- <button class="btn btn-danger float-right delete">ｘ</button> --}}
+          </li>
+          {{/each}}
+        </ul>
       </div>
     </div>
   </div>
 </div>
-  <footer class="page-footer teal">
+<footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l12 s12">
@@ -82,3 +101,6 @@
       </div>
     </div>
   </footer>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
