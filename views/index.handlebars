@@ -1,45 +1,160 @@
-<div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="api-text">api Text</label>
-            <input type="text" id="api-text" class="form-control" aria-describedby="api-text" placeholder="Enter api Text">
-          </div>
-          <div class="form-group">
-            <label for="api-description">api Description</label>
-            <textarea class="form-control" id="api-description" aria-describedby="api-description" placeholder="Enter api Description"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="api-category">api category</label>
-            <textarea class="form-control" id="api-category" aria-describedby="api-category" placeholder="Enter api category"></textarea>
-          </div>
-        <div class="form-group">
-            <label for="api-URL">api category</label>
-            <textarea class="form-control" id="api-URL" aria-describedby="api-URL" placeholder="Enter api URL"></textarea>
+<nav class="teal" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">API Catalog</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/apis">Add an API</a></li>
+        {{!-- <li><a href="/search">Search API</a></li> --}}
+        {{!-- <li><a href="/rate">Rate an API</a></li> --}}
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">API Catalog</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">An open-source catalog for popular API's</h5>
         </div>
-        <div class="form-group">
-            <label for="api-Authentication">api category</label>
-            <textarea class="form-control" id="api-Authentication" aria-describedby="api-Authentication" placeholder="Enter api Authentication"></textarea>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">View Catalog</a>
         </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>apis:</h3>
-        <ul id="api-list" class="list-group">
-          {{#each apis}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="apis/{{this.id}}">{{this.text}}</a>
-            {{!-- <button class="btn btn-danger float-right delete">ｘ</button> --}}
-          </li>
-          {{/each}}
-        </ul>
+        <br><br>
+
       </div>
     </div>
+    <div class="parallax"><img src="/images/background4.jpg" alt="Unsplashed background img 1"></div>
   </div>
-</div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">search</i></h2>
+            <h5 class="center">Search API's</h5>
+
+            <p class="light">We did most of the heavy lifting for you! Search our growing database of user-rated API's and easily access the documentation you need to complete your projects.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">add</i></h2>
+            <h5 class="center">Add an API</h5>
+
+            <p class="light">Share your favorite API's with other users, or even ones you may have created, yourself!</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">poll</i></h2>
+            <h5 class="center">Rate an API</h5>
+
+            <p class="light">Rate an API based on its documentation and usability.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">This catalog is free, so add and access as many API's as you think can be useful to students and developers, alike.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="/images/background5.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">All API submissions will be listed as pending until it is approved by our team.  If there are any bugs or technical issues, please feel free to contact any of our team members;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">We look forward to continue growing our catalogue into something that developers and students can utilize on a regular basis.  Our goal is become and easy and beneficial tool for all.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="/images/background6.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text">Team Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any input would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text dev1">Sharvari Sangle</h5>
+          <ul>
+            <li><a class="white-text email" href="#!"></a></li>
+            <li><a class="white-text github" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text dev2">Jeremy King</h5>
+          <ul>
+            <li><a class="white-text email" href="#!">kingjeremy2211@hotmail.com</a></li>
+            <li><a class="white-text github" href="https://github.com/kingjeremy2211"></a>kingjeremy2211</li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text dev3">Ravi Mangra</h5>
+          <ul>
+            <li><a class="white-text email" href="#!"></a></li>
+            <li><a class="white-text github" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text dev4">Nichole Tester</h5>
+          <ul>
+            <li><a class="white-text email" href="#!"></a>nicholeetester@gmail.com</li>
+            <li><a class="white-text github" href="https://github.com/ntester24"></a>ntester24</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/js/init.js"></script>
