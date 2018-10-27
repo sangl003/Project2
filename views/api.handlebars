@@ -1,9 +1,25 @@
-<div class="container">
-  <div class="row">
-    <div class="col-8 offset-2">
-      <div class="card mt-4">
-        <div class="card-body">
-          <h5 class="card-title">Api</h5>
+ <nav class="teal" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" class="brand-logo">API Catalog</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/view">View</a></li>
+        <li><a href="../add">Add</a></li>      
+        <li><a href="/api/apis">Raw data</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h1><center> Selected API Description </center></h1>
+        <hr>
+
           <p>
             <strong>ID</strong>: {{api.id}}</p>
           <p>
@@ -22,9 +38,53 @@
           <p>
             <strong>Ratings for Ease of Use:</strong> {{api.Easy}}</p>
            
-           <a href="/">← Back To Home</a>
-        </div>
-      </div>
+    </div>
     </div>
   </div>
 </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text">Team Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any input would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text dev1">Sharvari Sangle</h5>
+            <ul>
+            <li><a class="white-text email" href="https://www.linkedin.com/in/sharvarisangle/">sharvari.sangle@gmail.com</a></li>
+            <li><a class="white-text github" href="https://github.com/sangl003">Sharvari Sangle</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text dev2">Jeremy King</h5>
+          <ul>
+            <li><a class="white-text email" href="#!">kingjeremy2211@hotmail.com</a></li>
+            <li><a class="white-text github" href="https://github.com/kingjeremy2211"></a>kingjeremy2211</li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text dev3">Ravi Mangra</h5>
+          <ul>
+            <li><a class="white-text email" href="#!"></a></li>
+            <li><a class="white-text github" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text dev4">Nichole Tester</h5>
+          <ul>
+            <li><a class="white-text email" href="#!"></a>nicholeetester@gmail.com</li>
+            <li><a class="white-text github" href="https://github.com/ntester24"></a>ntester24</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>

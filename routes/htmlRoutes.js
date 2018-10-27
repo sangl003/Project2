@@ -11,6 +11,17 @@ module.exports = (app) => {
     });
   });
 
+  // Load search page
+  app.get('/view', (req, res) => {
+    db.API.findAll({}).then((dbAPIs) => {
+      res.render('view', {
+        msg: 'IPA - API Search catalog!',
+        apis: dbAPIs,
+      });
+    });
+  });
+
+
   // Load add page
   app.get('/add', (req, res) => {
     db.API.findAll({}).then((dbAPIs) => {

@@ -25,7 +25,7 @@ const API = {
   },
   getapis() {
     return $.ajax({
-      url: 'api/apis',
+      url: '/view',
       type: 'GET',
     });
   },
