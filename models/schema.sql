@@ -8,6 +8,9 @@ CREATE TABLE apilists
     WebsiteURL VARCHAR(255) not null,
     description varchar(255) not null,
     Authentication VARCHAR(255) not null
+    OverallRating int not null,
+    Documentation int not null,
+    Easy int not null,
 );
 
 CREATE TABLE APIratings
