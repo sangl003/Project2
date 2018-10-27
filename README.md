@@ -5,7 +5,7 @@ IPA - API Catalog
 Group Members:
 	Jeremy King
 	Ravi Mangra
-Sharvari Sangle
+    Sharvari Sangle
 	Nichole Tester
 
 Project Description:
