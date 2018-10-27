@@ -11,6 +11,27 @@ module.exports = (app) => {
     });
   });
 
+  // Load search page
+  app.get('/view', (req, res) => {
+    db.API.findAll({}).then((dbAPIs) => {
+      res.render('view', {
+        msg: 'IPA - API Search catalog!',
+        apis: dbAPIs,
+      });
+    });
+  });
+
+
+  // Load add page
+  app.get('/add', (req, res) => {
+    db.API.findAll({}).then((dbAPIs) => {
+      res.render('add', {
+        msg: 'IPA - API Add catalog!',
+        apis: dbAPIs,
+      });
+    });
+  });
+
   // Load example page and pass in an example by id
   app.get('/apis/:id', (req, res) => {
     db.API.findOne({ where: { id: req.params.id } }).then((dbAPI) => {

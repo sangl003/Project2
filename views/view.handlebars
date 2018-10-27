@@ -1,31 +1,42 @@
- <nav class="teal" role="navigation">
+  <nav class="teal" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="/" class="brand-logo">API Catalog</a>
       <ul class="right hide-on-med-and-down">
-         <li><a href="/view">View</a></li>
+        <li><a href="/view">View</a></li>
         <li><a href="../add">Add</a></li>      
         <li><a href="/api/apis">Raw data</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="sidenav">
+       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
-  <div id="home">
+<div id="home">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h1><center>404 Not Found</center></h1>
-             <span role="img" aria-label="Face with rolling eyes">🙄</span>
-    </h1>
-    <a href="/">← Back To Home</a>
+      
+
+        <h1><center>Search your favorite API</center></h1>
+        <hr>
+        <h3><center>API List:</center></h3>
+        <hr>
+        <ul id="api-list" class="list-group">
+          {{#each apis}}
+          <button data-id="{{this.id}}" class="list-group-item btn btn-primary">
+            <a id ="anchortlist" href="apis/{{this.id}}" >{{this.text}}</a>
+            {{!-- <button class="btn btn-danger float-right delete">ｘ</button> --}}
+          </button>
+          {{/each}}
+        </ul>
+      </div>
+   
+    </div>
   </div>
 </div>
-</div>
-</div>
+
 <footer class="page-footer teal">
     <div class="container">
       <div class="row">
@@ -46,7 +57,7 @@
           <h5 class="white-text dev2">Jeremy King</h5>
           <ul>
             <li><a class="white-text email" href="#!">kingjeremy2211@hotmail.com</a></li>
-            <li><a class="white-text github" href="https://github.com/kingjeremy2211"> kingjeremy2211</a></li>
+            <li><a class="white-text github" href="https://github.com/kingjeremy2211"></a>kingjeremy2211</li>
           </ul>
         </div>
         <div class="col l3 s12">
@@ -71,3 +82,6 @@
       </div>
     </div>
   </footer>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>

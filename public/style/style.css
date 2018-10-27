@@ -1,6 +1,32 @@
-.list-group-item {
-    line-height: 2.5;
+/* .list-group-item {
+    line-height: 1;
   }
+
+  body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+    line-height: 2.5;
+  } */
   /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
@@ -12,6 +38,10 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
+}
+
+a#anchortlist{
+  color: white;
 }
 
 p {
@@ -63,4 +93,10 @@ body {
 }
 .form-control {
   background: white;
+}
+
+button{
+
+ margin: 1ex;
+
 }

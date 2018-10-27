@@ -9,15 +9,8 @@ module.exports = (app) => {
   });
 
   // Create a new example
-  app.post('/api/apis', (req, res) => {
+  app.post('/add', (req, res) => {
     db.API.create(req.body).then((dbAPI) => {
-      res.json(dbAPI);
-    });
-  });
-
-  // Delete an example by id
-  app.delete('/api/apis/:id', (req, res) => {
-    db.API.destroy({ where: { id: req.params.id } }).then((dbAPI) => {
       res.json(dbAPI);
     });
   });

@@ -1,10 +1,10 @@
-<nav class="teal" role="navigation">
+ <nav class="teal" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">API Catalog</a>
+      <a id="logo-container" href="/" class="brand-logo">API Catalog</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="/apis">Add an API</a></li>
-        <li><a href="/"><i class="material-icons">home</i></a></li>
-        {{!-- <li><a href="/rate">Rate an API</a></li> --}}
+        <li><a href="/view">View</a></li>
+        <li><a href="../add">Add</a></li>      
+        <li><a href="/api/apis">Raw data</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -13,12 +13,13 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-<div class="container">
-  <div class="row">
-    <div class="col-8 offset-2">
-      <div class="card mt-4">
-        <div class="card-body">
-          <h5 class="card-title">Api</h5>
+  <div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h1><center> Selected API Description </center></h1>
+        <hr>
+
           <p>
             <strong>ID</strong>: {{api.id}}</p>
           <p>
@@ -27,16 +28,21 @@
           <p>
             <strong>Description:</strong> {{api.description}}</p>
           <p>
-            <strong>Website URL:</strong> {{api.WebsiteURL}}</p>
+            <strong>Website URL:</strong> <a href = "{{api.WebsiteURL}}">Visit Me</a></p>
           <p>
             <strong>Authentication:</strong> {{api.Authentication}}</p>
+          <p>
+            <strong>Over All Ratings :</strong> {{api.OverallRating}}</p>
+          <p>
+            <strong>Ratings for Documentation :</strong> {{api.Documentation}}</p>
+          <p>
+            <strong>Ratings for Ease of Use:</strong> {{api.Easy}}</p>
            
-           <a href="/">← Back To Home</a>
-        </div>
-      </div>
+    </div>
     </div>
   </div>
 </div>
+
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
@@ -48,9 +54,9 @@
         </div>
         <div class="col l3 s12">
           <h5 class="white-text dev1">Sharvari Sangle</h5>
-          <ul>
-            <li><a class="white-text email" href="#!"></a></li>
-            <li><a class="white-text github" href="#!"></a></li>
+            <ul>
+            <li><a class="white-text email" href="https://www.linkedin.com/in/sharvarisangle/">sharvari.sangle@gmail.com</a></li>
+            <li><a class="white-text github" href="https://github.com/sangl003">Sharvari Sangle</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
