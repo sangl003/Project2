@@ -100,3 +100,11 @@ button{
  margin: 1ex;
 
 }
+.form-group {
+  font-size: 11;
+  color: black;
+}
+label {
+  font-size: 1ex;
+  color: black;
+}
