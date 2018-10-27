@@ -5,9 +5,9 @@ module.exports = (sequelize, DataTypes) => {
     category: DataTypes.TEXT,
     WebsiteURL: DataTypes.TEXT,
     Authentication: DataTypes.TEXT,
-    OverallRating: DataTypes.INTEGER,
-    Documentation: DataTypes.INTEGER,
-    Easy: DataTypes.INTEGER,
+    // OverallRating: DataTypes.INTEGER,
+    // Documentation: DataTypes.INTEGER,
+    // Easy: DataTypes.INTEGER,
   },
   {
     timestamps: false,

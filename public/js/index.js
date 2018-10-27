@@ -70,7 +70,7 @@ const handleFormSubmit = (event) => {
   };
 
   if (!(api.text && api.description)) {
-    alert('You must enter an api text and description!');
+    prompt('You must enter an api text and description!.....Modal is under construction' );
     return;
   }
 
@@ -86,7 +86,7 @@ const handleFormSubmit = (event) => {
   $apiovaerallrating.val('');
   $apiDocumentation.val('');
   $apiEasy.val('');
-  alert('Thank you for adding API information');
+  alert('Thank you for adding API information.....Modal is under construction');
 };
 
 // Add event listeners to the submit and delete buttons
